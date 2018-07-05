@@ -28,13 +28,18 @@ The User Interface for the project should start with simple UIs, and refine/embe
 
 Start with a simple, multi-user  “Chatserver” - it should work with a central server, and clients which REST into that server. The central server is backed by a database.
 Simple UI, bootstrap/ionic/angular client page for starter UI.
+
 APIs
-	User create/delete, Login
-	Post message/ readAll for single -> many channels
-	Channel create/delete/invite/post/readAll
+* User create/delete, Login
+* Post message/ readAll for single -> many channels
+* Channel create/delete/invite/post/readAll
+
 One channel, send messages, many clients, chat-server functionality
+
 Add user auth, User spaces, 
+
 Add multiple channels with membership (invitation), privacy between channels 
+
 Add image attachments, emojis. Document attachments, with download.
 
 Mobile app interface
