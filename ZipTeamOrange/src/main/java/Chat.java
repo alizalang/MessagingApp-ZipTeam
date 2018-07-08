@@ -1,14 +1,15 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 public class Chat {
-    int chatId;
-    String name;
-    boolean isChannel;
-    boolean isPublic;
-    int creatorId;
-    HashSet<User> users = new HashSet<User>();
-    ArrayList<Message> messages = new ArrayList<Message>();
+    private int chatId;
+    private String name;
+    private boolean isChannel;
+    private boolean isPublic;
+    private int creatorId;
+    private HashSet<User> users = new HashSet<User>();
+    private HashMap<String, Message> messages = new HashMap<String, Message>();
 
     public Chat(){}
 
@@ -37,5 +38,17 @@ public class Chat {
 
     public boolean isPublic() {
         return isPublic;
+    }
+
+    public int getCreatorId() {
+        return creatorId;
+    }
+
+    public HashSet<User> getUsers() {
+        return users;
+    }
+
+    public HashMap<String, Message> getMessages() {
+        return messages;
     }
 }
