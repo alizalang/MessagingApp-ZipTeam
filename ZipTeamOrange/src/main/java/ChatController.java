@@ -1,4 +1,4 @@
-public class ChatController extends Controller{
+public class ChatController extends Controller {
 
     private Chat chat;
     private String uri;

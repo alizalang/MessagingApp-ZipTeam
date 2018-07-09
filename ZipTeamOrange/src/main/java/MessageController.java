@@ -1,4 +1,4 @@
-public class MessageController extends Controller{
+public class MessageController extends Controller {
 
     private Message message;
     private String uri;
