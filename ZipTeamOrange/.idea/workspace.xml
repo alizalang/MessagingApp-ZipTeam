@@ -13,99 +13,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ChatRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ChatRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
+      <file leaf-file-name="JAVA/Chat" pinned="false" current-in-tab="false">
+        <entry file="uml://JAVA/Chat">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+              <ID>JAVA</ID>
+              <OriginalElement>Chat</OriginalElement>
+              <nodes>
+                <node x="-167.0" y="-196.0">Chat</node>
+              </nodes>
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="-201.5" y="-37.0" />
+              <SelectedNodes>
+                <node>Chat</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>Project Files</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/User.java">
-          <provider selected="true" editor-type-id="text-editor">
+      <file leaf-file-name="JAVA/" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
             <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MessageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChatController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/ChatController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Chat.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Chat.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#255#261#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/UserRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <ID>JAVA</ID>
+              <OriginalElement />
+              <nodes>
+                <node x="335.0" y="308.0">User</node>
+                <node x="687.0" y="308.0">Message</node>
+                <node x="0.0" y="603.0">MessageRespository</node>
+                <node x="0.0" y="699.0">UserRespository</node>
+                <node x="0.0" y="308.0">Chat</node>
+                <node x="0.0" y="101.0">UserController</node>
+                <node x="410.0" y="101.0">MessageController</node>
+                <node x="0.0" y="795.0">ChatRespository</node>
+                <node x="235.0" y="0.0">Controller</node>
+                <node x="205.0" y="101.0">ChatController</node>
+                <node x="541.0" y="795.0">Main</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="UserController" target="Controller">
+                  <point x="0.0" y="-81.0" />
+                  <point x="92.5" y="76.0" />
+                  <point x="255.83333333333334" y="76.0" />
+                  <point x="-41.66666666666666" y="25.5" />
+                </edge>
+                <edge source="MessageController" target="Controller">
+                  <point x="0.0" y="-81.0" />
+                  <point x="502.5" y="76.0" />
+                  <point x="339.16666666666663" y="76.0" />
+                  <point x="41.66666666666663" y="25.5" />
+                </edge>
+                <edge source="ChatController" target="Controller">
+                  <point x="0.0" y="-81.0" />
+                  <point x="0.0" y="25.5" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="1.0" x="423.5" y="433.5" />
+              <SelectedNodes>
+                <node>MessageRespository</node>
+              </SelectedNodes>
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+                <Category>Properties</Category>
+              </Categories>
+              <SCOPE>Project Files</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -159,11 +142,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="442" />
-    <option name="y" value="115" />
-    <option name="width" value="1280" />
-    <option name="height" value="709" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-170" />
+    <option name="y" value="-1049" />
+    <option name="width" value="1859" />
+    <option name="height" value="1043" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -195,22 +178,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ZipTeamOrange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZipTeamOrange" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ChatRepository.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="ZipTeamOrange" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ZipTeamOrange" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="MessageRepository.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
           </expand>
           <select />
@@ -307,10 +274,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8061000" />
+    <option name="totallyTimeSpent" value="9446000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="709" extended-state="6" />
+    <frame x="-170" y="-1049" width="1859" height="1043" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -333,7 +300,7 @@
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17213556" />
       <window_info anchor="right" id="Bean Validation" />
       <window_info id="Web" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" />
@@ -520,24 +487,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="uml://JAVA/Chat">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>Chat</OriginalElement>
-          <nodes>
-            <node x="" y="">Chat</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="38.5" y="14.5" />
-          <SelectedNodes />
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
     <entry file="uml://JAVA/User">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -681,6 +630,82 @@
             <element signature="imports" expanded="true" />
             <element signature="e#255#261#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/Chat">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Chat</OriginalElement>
+          <nodes>
+            <node x="-167.0" y="-196.0">Chat</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-201.5" y="-37.0" />
+          <SelectedNodes>
+            <node>Chat</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>Project Files</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement />
+          <nodes>
+            <node x="335.0" y="308.0">User</node>
+            <node x="687.0" y="308.0">Message</node>
+            <node x="0.0" y="603.0">MessageRespository</node>
+            <node x="0.0" y="699.0">UserRespository</node>
+            <node x="0.0" y="308.0">Chat</node>
+            <node x="0.0" y="101.0">UserController</node>
+            <node x="410.0" y="101.0">MessageController</node>
+            <node x="0.0" y="795.0">ChatRespository</node>
+            <node x="235.0" y="0.0">Controller</node>
+            <node x="205.0" y="101.0">ChatController</node>
+            <node x="541.0" y="795.0">Main</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="UserController" target="Controller">
+              <point x="0.0" y="-81.0" />
+              <point x="92.5" y="76.0" />
+              <point x="255.83333333333334" y="76.0" />
+              <point x="-41.66666666666666" y="25.5" />
+            </edge>
+            <edge source="MessageController" target="Controller">
+              <point x="0.0" y="-81.0" />
+              <point x="502.5" y="76.0" />
+              <point x="339.16666666666663" y="76.0" />
+              <point x="41.66666666666663" y="25.5" />
+            </edge>
+            <edge source="ChatController" target="Controller">
+              <point x="0.0" y="-81.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="423.5" y="433.5" />
+          <SelectedNodes>
+            <node>MessageRespository</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>Project Files</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
