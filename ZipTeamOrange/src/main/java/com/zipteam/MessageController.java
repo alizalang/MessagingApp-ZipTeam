@@ -1,3 +1,5 @@
+package com.zipteam;
+
 public class MessageController extends Controller{
 
     private Message message;

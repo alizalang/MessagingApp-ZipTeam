@@ -1,3 +1,5 @@
+package com.zipteam;
+
 import java.util.Date;
 
 public class Message {
