@@ -1,7 +1,6 @@
 package com.zipteam;
 
 import org.springframework.data.jpa.repository.JpaRepository;
-
 import java.util.List;
 
 interface MessageRespository extends JpaRepository<User, Integer> {

@@ -1,5 +1,6 @@
 # ZipTeam
 
+
 a zip code slack clone
 
 ### Project planning:
