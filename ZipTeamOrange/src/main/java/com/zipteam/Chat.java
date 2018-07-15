@@ -1,8 +1,7 @@
-<<<<<<< HEAD:ZipTeamOrange/src/main/java/com/zipteam/Chat.java
+
 package com.zipteam;
 
-=======
->>>>>>> 6a0f92fbf58b2aaee9c06fdf6f5e75c39a426217:ZipTeamOrange/src/main/java/Chat.java
+
 import java.util.HashMap;
 import java.util.HashSet;
 
