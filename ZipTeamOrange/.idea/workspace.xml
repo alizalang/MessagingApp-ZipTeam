@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="89d6540a-016b-4ca2-b3c6-35f20252ff94" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Middleteir.uml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZipTeamOrange/ZipTeamOrangeApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZipTeamOrange/ZipTeamOrangeApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZipTeamOrange/user/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZipTeamOrange/user/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ZipTeamOrange/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ZipTeamOrange/user/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="89d6540a-016b-4ca2-b3c6-35f20252ff94" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
