@@ -1,0 +1,17 @@
+{
+  "name": "zipteam",
+  "version": "1.0.0",
+  "description": "Zip Team",
+  "main": "index.js",
+  "scripts": {
+	"start": "npm run serve-ionic | npm run serve-spring",
+	"serve-ionic": "cd i-ZipTeamOrange && ionic serve --port 9090",
+	"serve-spring": "cd ZipTeamOrange && ./mvnw spring-boot:run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.zipcode.rocks/hallinanc/ZipTeam.git"
+  },
+  "author": "",
+  "license": "ISC"
+}

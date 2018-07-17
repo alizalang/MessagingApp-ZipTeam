@@ -12,7 +12,7 @@ public class UserController {
     private UserRepository userRepository;
 
     @PostMapping(path="/add")
-    @CrossOrigin(origins = {"http://localhost:8102"})
+    @CrossOrigin(origins = {"http://localhost:8103"})
     public @ResponseBody String addNewUser(@RequestBody User user){
         userRepository.save(user);
         return  "saved";
