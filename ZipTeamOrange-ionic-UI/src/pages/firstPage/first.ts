@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { SignUpPage } from '../sign-up/sign-up';
+import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
+import { NgForm } from '@angular/forms';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the FirstPage page.
@@ -16,16 +19,28 @@ import { SignUpPage } from '../sign-up/sign-up';
 })
 export class FirstPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  responseData: any;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, public authService: AuthServiceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FirstPage');
   }
 
-  myButton(){
-    console.log("clicked");
+  loginButton(createAccountInfo: NgForm) {
+    this.authService.postData(createAccountInfo).then((result) => {
+      this.responseData = result;
+      console.log(createAccountInfo);
+      if(!this.responseData.createAccountInfo){
+        this.navCtrl.push(HomePage);
+      }else{
+        console.log("check your info");
+      }
+      
+    }).catch(console.log);
   }
+
 
   createAccount(){
     this.navCtrl.push(SignUpPage);

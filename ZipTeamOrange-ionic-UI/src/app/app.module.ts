@@ -15,6 +15,7 @@ import { FirstPage } from '../pages/firstPage/first';
 import { SignUpPage } from '../pages/sign-up/sign-up';
 import { ApiServiceProvider } from '../providers/api-service/api-service';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
+import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { HttpClientModule } from '../../node_modules/@angular/common/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ApiServiceProvider
+    ApiServiceProvider,
+    AuthServiceProvider
   ]
 })
 export class AppModule {}
