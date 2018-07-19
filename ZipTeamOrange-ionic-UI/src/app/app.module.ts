@@ -16,6 +16,8 @@ import { SignUpPage } from '../pages/sign-up/sign-up';
 import { ApiServiceProvider } from '../providers/api-service/api-service';
 import { HttpClientModule } from '../../node_modules/@angular/common/http';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
+import { MessageServiceProvider } from '../providers/message-service/message-service';
+import { ChatPage } from '../pages/chat/chat';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     ContactPage,
     HomePage,
     TabsPage,
-    SignUpPage
+    SignUpPage,
+    ChatPage
   ],
   imports: [
     BrowserModule,
@@ -40,14 +43,16 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     ContactPage,
     HomePage,
     TabsPage,
-    SignUpPage
+    SignUpPage,
+    ChatPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     ApiServiceProvider,
-    AuthServiceProvider
+    AuthServiceProvider,
+    MessageServiceProvider
   ]
 })
 export class AppModule {}

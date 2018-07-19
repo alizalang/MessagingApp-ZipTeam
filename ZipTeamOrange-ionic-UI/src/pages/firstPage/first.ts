@@ -4,6 +4,7 @@ import { SignUpPage } from '../sign-up/sign-up';
 import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
 import { NgForm } from '@angular/forms';
 import { HomePage } from '../home/home';
+import { ChatPage } from '../chat/chat';
 
 /**
  * Generated class for the FirstPage page.
@@ -33,7 +34,7 @@ export class FirstPage {
       this.responseData = result;
       console.log(createAccountInfo);
       if(!this.responseData.createAccountInfo){
-        this.navCtrl.push(HomePage);
+        this.navCtrl.push(ChatPage);
       }else{
         console.log("check your info");
       }

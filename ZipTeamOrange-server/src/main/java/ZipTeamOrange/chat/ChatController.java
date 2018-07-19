@@ -6,17 +6,17 @@ import org.springframework.web.bind.annotation.*;
 
 @Controller
 @RequestMapping(path = "/chat")
+@CrossOrigin(origins = {"http://localhost:8103"})
 public class ChatController {
 
     @Autowired
     private ChatRepository chatRepository;
 
     @PostMapping(path="/add")
-    @CrossOrigin(origins = {"http://localhost:8103"})
     public @ResponseBody
-    String addNewChat(@RequestBody Chat chat){
+    Chat addNewChat(@RequestBody Chat chat){
         chatRepository.save(chat);
-        return  "saved";
+        return  chat;
     }
 
     @GetMapping(path="/all")
@@ -24,5 +24,6 @@ public class ChatController {
         //this returns a JSON or XML with chats
         return chatRepository.findAll();
     }
+
 
 }
