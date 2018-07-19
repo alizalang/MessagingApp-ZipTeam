@@ -2,7 +2,6 @@ package ZipTeamOrange.message;
 
 import ZipTeamOrange.chat.Chat;
 import ZipTeamOrange.user.User;
-
 import javax.persistence.*;
 
 @Entity

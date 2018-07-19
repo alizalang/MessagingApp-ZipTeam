@@ -2,7 +2,6 @@ package ZipTeamOrange.user;
 
 import ZipTeamOrange.chat.Chat;
 import ZipTeamOrange.message.Message;
-
 import javax.persistence.*;
 import java.util.Set;
 
@@ -24,7 +23,7 @@ public class User {
             joinColumns = { @JoinColumn(name = "user_id") },
             inverseJoinColumns = { @JoinColumn(name = "chat_id") }
     )
-    private Chat chat;
+    private Set<Chat> chat;
 
 
     public User() {
