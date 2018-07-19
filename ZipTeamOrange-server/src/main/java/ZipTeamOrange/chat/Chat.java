@@ -14,10 +14,10 @@ public class Chat {
     private Long id;
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "chat")
     private Set<Message> messages;
 
-    @ManyToMany
+    @ManyToMany(mappedBy = "chat")
     private Set<User> users;
 
     public Chat(String name, Set<User> users) {

@@ -1,5 +1,6 @@
 package ZipTeamOrange.user;
 
+import ZipTeamOrange.chat.Chat;
 import ZipTeamOrange.message.Message;
 
 import javax.persistence.*;
@@ -17,6 +18,13 @@ public class User {
     private String password;
     @OneToMany(mappedBy = "user")
     private Set<Message> messages;
+    @ManyToMany
+    @JoinTable(
+            name = "USER_CHAT",
+            joinColumns = { @JoinColumn(name = "user_id") },
+            inverseJoinColumns = { @JoinColumn(name = "chat_id") }
+    )
+    private Chat chat;
 
 
     public User() {

@@ -1,5 +1,6 @@
 package ZipTeamOrange.message;
 
+import ZipTeamOrange.chat.Chat;
 import ZipTeamOrange.user.User;
 
 import javax.persistence.*;
@@ -14,6 +15,10 @@ public class Message {
     @ManyToOne
     @JoinColumn(name="user_id")
     User user;
+
+    @ManyToOne
+    @JoinColumn(name = "chat_id")
+    private Chat chat;
 
     public Message(String message, User user) {
         this.message = message;
