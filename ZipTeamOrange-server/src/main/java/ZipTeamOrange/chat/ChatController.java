@@ -20,10 +20,9 @@ public class ChatController {
     }
 
     @GetMapping(path="/all")
-    public @ResponseBody Iterable<Chat> getAllChat(){
+    public @ResponseBody Iterable<Chat> getAllChat() {
         //this returns a JSON or XML with chats
         return chatRepository.findAll();
+
     }
-
-
 }

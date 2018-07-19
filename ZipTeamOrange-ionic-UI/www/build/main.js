@@ -204,15 +204,15 @@ webpackEmptyAsyncContext.id = 115;
 var map = {
 	"../pages/chat/chat.module": [
 		284,
-		2
+		0
 	],
 	"../pages/firstPage/first.module": [
 		285,
-		1
+		2
 	],
 	"../pages/sign-up/sign-up.module": [
 		286,
-		0
+		1
 	]
 };
 function webpackAsyncContext(req) {
