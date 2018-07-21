@@ -41,7 +41,7 @@ export class SignUpPage {
   }
 
   save(createAccountInfo: NgForm) {
-    console.log(createAccountInfo)
+  //  console.log(createAccountInfo)
     this.apiProvider.save(createAccountInfo).subscribe(console.log)
   }
 

@@ -14,5 +14,5 @@
 
 
 <ion-content padding>
-  <input type="text"><button ion-button (click)="send()">send</button>
+  <ion-textarea  type="text" [(ngModel)]="test" ng-submit="send()"></ion-textarea><button ion-button (click)="send()">send</button>
 </ion-content>

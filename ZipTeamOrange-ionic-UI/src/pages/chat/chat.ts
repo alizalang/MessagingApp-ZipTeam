@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NgForm } from '../../../node_modules/@angular/forms';
+import { MessageServiceProvider } from '../../providers/message-service/message-service';
 
 /**
  * Generated class for the ChatPage page.
@@ -14,16 +16,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'chat.html',
 })
 export class ChatPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  test: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public messageApi: MessageServiceProvider) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ChatPage');
   }
 
-  send(){
+  send(createAccountInfo: any){
     console.log("clicked");
+    console.log({test: this.test})
+    // this.messageApi.saveMessage(createAccountInfo);
   }
-
 }
