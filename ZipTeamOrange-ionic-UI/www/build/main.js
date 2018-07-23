@@ -37,17 +37,16 @@ var ChatPage = /** @class */ (function () {
     };
     ChatPage.prototype.send = function (createAccountInfo) {
         console.log("clicked");
-        console.log({ test: this.test });
-        // this.messageApi.saveMessage(createAccountInfo);
+        console.log(createAccountInfo);
+        this.messageApi.saveMessage(createAccountInfo).subscribe(console.log);
     };
     ChatPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-chat',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/'<!--\n  Generated template for the ChatPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>chatPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <ion-textarea  type="text" [(ngModel)]="test" ng-submit="send()"></ion-textarea><button ion-button (click)="send()">send</button>\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/,
+            selector: 'page-chat',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/'<!--\n  Generated template for the ChatPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>chatPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding >\n  <form  #test1="ngForm" ng-submit="send(test1.value)">\n    <ion-textarea  type="text" name="message" [(ngModel)]="test" ></ion-textarea>\n    <button ion-button (click)="send(test1.value)">send</button>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */]])
     ], ChatPage);
     return ChatPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=chat.js.map

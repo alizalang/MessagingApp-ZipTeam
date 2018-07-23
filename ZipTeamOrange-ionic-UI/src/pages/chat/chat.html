@@ -13,6 +13,9 @@
 </ion-header>
 
 
-<ion-content padding>
-  <ion-textarea  type="text" [(ngModel)]="test" ng-submit="send()"></ion-textarea><button ion-button (click)="send()">send</button>
+<ion-content padding >
+  <form  #test1="ngForm" ng-submit="send(test1.value)">
+    <ion-textarea  type="text" name="message" [(ngModel)]="test" ></ion-textarea>
+    <button ion-button (click)="send(test1.value)">send</button>
+  </form>
 </ion-content>

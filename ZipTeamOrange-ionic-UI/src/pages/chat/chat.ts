@@ -24,9 +24,9 @@ export class ChatPage {
     console.log('ionViewDidLoad ChatPage');
   }
 
-  send(createAccountInfo: any){
+  send(createAccountInfo: NgForm){
     console.log("clicked");
-    console.log({test: this.test})
-    // this.messageApi.saveMessage(createAccountInfo);
+    console.log(createAccountInfo)
+    this.messageApi.saveMessage(createAccountInfo).subscribe(console.log);
   }
 }

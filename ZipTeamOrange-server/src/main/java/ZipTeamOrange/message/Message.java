@@ -19,10 +19,12 @@ public class Message {
     @JoinColumn(name = "chat_id")
     private Chat chat;
 
-    public Message(String message, User user) {
+
+    public Message(String message) {
         this.message = message;
-        this.user = user;
+        //this.user = user;
     }
+
 
     public Message(){}
 
