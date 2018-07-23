@@ -11,11 +11,15 @@
   </ion-navbar>
 
 </ion-header>
-
+<!-- *ngFor="let m of msg">{{ m }} -->
 
 <ion-content padding >
+  <div *ngFor="let m of msg">
+    {{ m.message }}
+  </div>
+
   <form  #test1="ngForm" ng-submit="send(test1.value)">
     <ion-textarea  type="text" name="message" [(ngModel)]="test" ></ion-textarea>
-    <button ion-button (click)="send(test1.value)">send</button>
+    <button ion-button (click)="send(test1.value)"(click)="getMessages()">send</button>
   </form>
 </ion-content>

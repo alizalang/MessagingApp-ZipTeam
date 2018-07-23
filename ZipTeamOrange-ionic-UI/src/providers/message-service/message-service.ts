@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Message } from '../../Classes/Messsage';
 
 /*
   Generated class for the MessageServiceProvider provider.
@@ -11,12 +12,17 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class MessageServiceProvider {
 
+  messages = [];
   constructor(public http: HttpClient) {
     console.log('Hello MessageServiceProvider Provider');
   }
 
   getMessages(){
-    return this.http.get('http:localhost:8080/messages')
+    return this.http.get('http://localhost:8080/message/all');
+  }
+
+  getCurrentMessage(){
+    return this.messages;
   }
 
   saveMessage(createAccountInfo: any) : Observable<Object> {

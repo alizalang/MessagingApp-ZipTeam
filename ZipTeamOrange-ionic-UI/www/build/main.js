@@ -34,19 +34,30 @@ var ChatPage = /** @class */ (function () {
     }
     ChatPage.prototype.ionViewDidLoad = function () {
         console.log('ionViewDidLoad ChatPage');
+        this.getMessages();
     };
     ChatPage.prototype.send = function (createAccountInfo) {
         console.log("clicked");
         console.log(createAccountInfo);
         this.messageApi.saveMessage(createAccountInfo).subscribe(console.log);
+        this.getMessages();
+    };
+    ChatPage.prototype.getMessages = function () {
+        var _this = this;
+        this.messageApi.getMessages().subscribe(function (data) {
+            _this.msg = data;
+            console.log(data);
+        });
+        this.test = this.messageApi.getCurrentMessage();
     };
     ChatPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-chat',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/'<!--\n  Generated template for the ChatPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>chatPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding >\n  <form  #test1="ngForm" ng-submit="send(test1.value)">\n    <ion-textarea  type="text" name="message" [(ngModel)]="test" ></ion-textarea>\n    <button ion-button (click)="send(test1.value)">send</button>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/,
+            selector: 'page-chat',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/'<!--\n  Generated template for the ChatPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>chatPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<!-- *ngFor="let m of msg">{{ m }} -->\n\n<ion-content padding >\n  <div *ngFor="let m of msg">\n    {{ m.message }}\n  </div>\n\n  <form  #test1="ngForm" ng-submit="send(test1.value)">\n    <ion-textarea  type="text" name="message" [(ngModel)]="test" ></ion-textarea>\n    <button ion-button (click)="send(test1.value)"(click)="getMessages()">send</button>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */]) === "function" && _c || Object])
     ], ChatPage);
     return ChatPage;
+    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=chat.js.map
@@ -263,19 +274,24 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var MessageServiceProvider = /** @class */ (function () {
     function MessageServiceProvider(http) {
         this.http = http;
+        this.messages = [];
         console.log('Hello MessageServiceProvider Provider');
     }
     MessageServiceProvider.prototype.getMessages = function () {
-        return this.http.get('http:localhost:8080/messages');
+        return this.http.get('http://localhost:8080/message/all');
+    };
+    MessageServiceProvider.prototype.getCurrentMessage = function () {
+        return this.messages;
     };
     MessageServiceProvider.prototype.saveMessage = function (createAccountInfo) {
         return this.http.post("http://localhost:8080/message/add", createAccountInfo);
     };
     MessageServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
     ], MessageServiceProvider);
     return MessageServiceProvider;
+    var _a;
 }());
 
 //# sourceMappingURL=message-service.js.map
