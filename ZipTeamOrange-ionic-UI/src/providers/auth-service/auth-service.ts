@@ -19,7 +19,7 @@ export class AuthServiceProvider {
   postData(createAccountInfo: any){
     return new Promise((resolve, reject) => {
 
-      this.http.post(`http://localhost:8080/user/add`, createAccountInfo, {responseType: 'text'}).subscribe((res: any) => {
+      this.http.post(`https://arcane-ridge.herokuapp.com/user/add`, createAccountInfo, {responseType: 'text'}).subscribe((res: any) => {
       console.log(JSON.parse(res))
       resolve(JSON.parse(res));
       }, (err) => {

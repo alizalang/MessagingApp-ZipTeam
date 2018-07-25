@@ -52,12 +52,11 @@ var ChatPage = /** @class */ (function () {
     };
     ChatPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-chat',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/'<!--\n  Generated template for the ChatPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>chatPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<!-- *ngFor="let m of msg">{{ m }} -->\n\n<ion-content padding >\n  <div *ngFor="let m of msg">\n    {{ m.message }}\n  </div>\n\n  <form  #test1="ngForm" ng-submit="send(test1.value)">\n    <ion-textarea  type="text" name="message" [(ngModel)]="test" ></ion-textarea>\n    <button ion-button (click)="send(test1.value)"(click)="getMessages()">send</button>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/,
+            selector: 'page-chat',template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/'<!--\n  Generated template for the ChatPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n  <ion-navbar>\n    <ion-title>chatPage</ion-title>\n  </ion-navbar>\n\n</ion-header>\n<!-- *ngFor="let m of msg">{{ m }} -->\n\n<ion-content padding >\n  <div *ngFor="let m of msg">\n    {{ m.message }}\n  </div>\n\n  <form  #test1="ngForm" ng-submit="send(test1.value)">\n    <ion-textarea  type="text" name="message" [(ngModel)]="test" ></ion-textarea>\n    <button ion-button (click)="send(test1.value)"(click)="getMessages()">send</button>\n  </form>\n</ion-content>\n'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/chat/chat.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */]) === "function" && _c || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_message_service_message_service__["a" /* MessageServiceProvider */]])
     ], ChatPage);
     return ChatPage;
-    var _a, _b, _c;
 }());
 
 //# sourceMappingURL=chat.js.map
@@ -122,7 +121,7 @@ var FirstPage = /** @class */ (function () {
     };
     FirstPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-first',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/firstPage/first.html"*/'<!--\n  Generated template for the FirstPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="primary">\n    <button menuToggle ion- button icon-only>\n      <ion-icon name ="menu"></ion-icon>\n    </button>\n    <ion-title text-center>ZipTeamOrange</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h4>Welcome to this page</h4>\n  <div class="login-box">\n    <form #registerForm="ngForm" ng-submit="loginButton(registerForm.value)" >\n      <ion-row>\n        <ion-col>\n          <ion-list inset>\n            <ion-item>\n              <ion-input type="text" placeholder="Username" name="userName" required [(ngModel)]="Username" ></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-input type="password" placeholder="Password" name="password" required [(ngModel)]="password"></ion-input>\n            </ion-item>\n          </ion-list>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="signup-col">\n          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid" (click)="loginButton(registerForm.value)">Login</button>\n        </ion-col>\n      </ion-row>\n    </form>\n    <ion-row>\n      <ion-col color="secondary">\n        <button ion-button class="register-btn" block clear (click)="createAccount()">Create Account</button>\n      </ion-col>\n    </ion-row>\n  </div>\n  \n</ion-content>'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/firstPage/first.html"*/,
+            selector: 'page-first',template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/firstPage/first.html"*/'<!--\n  Generated template for the FirstPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n  <ion-navbar color="primary">\n    <button menuToggle ion- button icon-only>\n      <ion-icon name ="menu"></ion-icon>\n    </button>\n    <ion-title text-center>ZipTeamOrange</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n  <h4>Welcome to this page</h4>\n  <div class="login-box">\n    <form #registerForm="ngForm" ng-submit="loginButton(registerForm.value)" >\n      <ion-row>\n        <ion-col>\n          <ion-list inset>\n            <ion-item>\n              <ion-input type="text" placeholder="Username" name="userName" required [(ngModel)]="Username" ></ion-input>\n            </ion-item>\n            <ion-item>\n              <ion-input type="password" placeholder="Password" name="password" required [(ngModel)]="password"></ion-input>\n            </ion-item>\n          </ion-list>\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="signup-col">\n          <button ion-button class="submit-btn" full type="submit" [disabled]="!registerForm.form.valid" (click)="loginButton(registerForm.value)">Login</button>\n        </ion-col>\n      </ion-row>\n    </form>\n    <ion-row>\n      <ion-col color="secondary">\n        <button ion-button class="register-btn" block clear (click)="createAccount()">Create Account</button>\n      </ion-col>\n    </ion-row>\n  </div>\n  \n</ion-content>'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/firstPage/first.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__providers_auth_service_auth_service__["a" /* AuthServiceProvider */]])
     ], FirstPage);
@@ -186,7 +185,7 @@ var SignUpPage = /** @class */ (function () {
     };
     SignUpPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sign-up',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/sign-up/sign-up.html"*/'<!--\n  Generated template for the SignUpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar color="primary">\n      <ion-title>sign-up</ion-title>\n    </ion-navbar>\n  \n  </ion-header>\n  \n  \n  <ion-content padding>\n      <div class="signUp-box">\n      <form #registerForm="ngForm" ng-submit="save(registerForm.value)">\n        <ion-row>\n          <ion-col>\n            <ion-list inset>\n              <ion-item>\n                <ion-input type="text" placeholder="Username" name="userName" required [(ngModel)]="Username" ></ion-input>\n              </ion-item>\n              <ion-item>\n                  <ion-input type="text" placeholder="Email" name="email" required [(ngModel)]="Email" ></ion-input>\n                </ion-item>\n              <ion-item>\n                <ion-input type="password" placeholder="Password" name="password" required [(ngModel)]="password"></ion-input>\n              </ion-item>\n            </ion-list>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="signup-col">\n            <button ion-button class="submit-btn" full type="submit" (click)="save(registerForm.value)" [disabled]="!registerForm.form.valid">Create Account</button>\n          </ion-col>\n        </ion-row>\n      </form>\n    \n    </div>\n  \n  </ion-content>\n  \n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/sign-up/sign-up.html"*/,
+            selector: 'page-sign-up',template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/sign-up/sign-up.html"*/'<!--\n  Generated template for the SignUpPage page.\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n  Ionic pages and navigation.\n-->\n<ion-header>\n\n    <ion-navbar color="primary">\n      <ion-title>sign-up</ion-title>\n    </ion-navbar>\n  \n  </ion-header>\n  \n  \n  <ion-content padding>\n      <div class="signUp-box">\n      <form #registerForm="ngForm" ng-submit="save(registerForm.value)">\n        <ion-row>\n          <ion-col>\n            <ion-list inset>\n              <ion-item>\n                <ion-input type="text" placeholder="Username" name="userName" required [(ngModel)]="Username" ></ion-input>\n              </ion-item>\n              <ion-item>\n                  <ion-input type="text" placeholder="Email" name="email" required [(ngModel)]="Email" ></ion-input>\n                </ion-item>\n              <ion-item>\n                <ion-input type="password" placeholder="Password" name="password" required [(ngModel)]="password"></ion-input>\n              </ion-item>\n            </ion-list>\n          </ion-col>\n        </ion-row>\n        <ion-row>\n          <ion-col class="signup-col">\n            <button ion-button class="submit-btn" full type="submit" (click)="save(registerForm.value)" [disabled]="!registerForm.form.valid">Create Account</button>\n          </ion-col>\n        </ion-row>\n      </form>\n    \n    </div>\n  \n  </ion-content>\n  \n'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/sign-up/sign-up.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_api_service_api_service__["a" /* ApiServiceProvider */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* ToastController */]])
     ], SignUpPage);
@@ -278,20 +277,19 @@ var MessageServiceProvider = /** @class */ (function () {
         console.log('Hello MessageServiceProvider Provider');
     }
     MessageServiceProvider.prototype.getMessages = function () {
-        return this.http.get('http://localhost:8080/message/all');
+        return this.http.get('https://arcane-ridge.herokuapp.com//message/all');
     };
     MessageServiceProvider.prototype.getCurrentMessage = function () {
         return this.messages;
     };
     MessageServiceProvider.prototype.saveMessage = function (createAccountInfo) {
-        return this.http.post("http://localhost:8080/message/add", createAccountInfo);
+        return this.http.post('https://arcane-ridge.herokuapp.com//message/add', createAccountInfo);
     };
     MessageServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_common_http__["a" /* HttpClient */]])
     ], MessageServiceProvider);
     return MessageServiceProvider;
-    var _a;
 }());
 
 //# sourceMappingURL=message-service.js.map
@@ -328,11 +326,11 @@ var ApiServiceProvider = /** @class */ (function () {
         console.log('Hello ApiServiceProvider Provider');
     }
     ApiServiceProvider.prototype.getUsers = function () {
-        return this.http.get('http:localhost:8080/users');
+        return this.http.get('https://arcane-ridge.herokuapp.com/users');
     };
     ApiServiceProvider.prototype.save = function (createAccountInfo) {
         //return this.http.post(`http://localhost:8080/ZipTeamOrange/add?username=${createAccountInfo.name}&email=${createAccountInfo.email}&password=${createAccountInfo.password}`, {})
-        return this.http.post("http://localhost:8080/user/add", createAccountInfo);
+        return this.http.post("https://arcane-ridge.herokuapp.com/user/add", createAccountInfo);
     };
     ApiServiceProvider = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["A" /* Injectable */])(),
@@ -380,7 +378,7 @@ var AuthServiceProvider = /** @class */ (function () {
     AuthServiceProvider.prototype.postData = function (createAccountInfo) {
         var _this = this;
         return new Promise(function (resolve, reject) {
-            _this.http.post("http://localhost:8080/user/add", createAccountInfo, { responseType: 'text' }).subscribe(function (res) {
+            _this.http.post("https://arcane-ridge.herokuapp.com/user/add", createAccountInfo, { responseType: 'text' }).subscribe(function (res) {
                 console.log(JSON.parse(res));
                 resolve(JSON.parse(res));
             }, function (err) {
@@ -431,7 +429,7 @@ var TabsPage = /** @class */ (function () {
         this.tab4Root = __WEBPACK_IMPORTED_MODULE_2__contact_contact__["a" /* ContactPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Log"  tabIcon="sign-in"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/tabs/tabs.html"*/'<ion-tabs>\n  <ion-tab [root]="tab1Root" tabTitle="Log"  tabIcon="sign-in"></ion-tab>\n  <ion-tab [root]="tab2Root" tabTitle="Home" tabIcon="home"></ion-tab>\n  <ion-tab [root]="tab3Root" tabTitle="About" tabIcon="information-circle"></ion-tab>\n  <ion-tab [root]="tab4Root" tabTitle="Contact" tabIcon="contacts"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -466,7 +464,7 @@ var AboutPage = /** @class */ (function () {
     }
     AboutPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-about',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/about/about.html"*/
+            selector: 'page-about',template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/about/about.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      About\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/about/about.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], AboutPage);
@@ -501,7 +499,7 @@ var ContactPage = /** @class */ (function () {
     }
     ContactPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/contact/contact.html"*/
+            selector: 'page-contact',template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/contact/contact.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      Contact\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <ion-list-header>Follow us on Twitter</ion-list-header>\n    <ion-item>\n      <ion-icon name="ionic" item-start></ion-icon>\n      @ionicframework\n    </ion-item>\n  </ion-list>\n</ion-content>\n'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/contact/contact.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], ContactPage);
@@ -536,7 +534,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h2>Welcome to Ionic!</h2>\n  <p>\n    This starter project comes with simple tabs-based layout for apps\n    that are going to primarily use a Tabbed UI.\n  </p>\n  <p>\n    Take a look at the <code>src/pages/</code> directory to add or change tabs,\n    update any existing page or create new pages.\n  </p>\n</ion-content>\n'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavController */]])
     ], HomePage);
@@ -695,7 +693,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/alizalang/Desktop/ZipTeam/ZipTeamOrange-ionic-UI/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/ChadH/Labs/ZipTeam/ZipTeamOrange-ionic-UI/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);

@@ -7,6 +7,7 @@ import java.util.Set;
 
 
 @Entity
+@Table(name="ChatUser")
 public class User {
 
     @Id

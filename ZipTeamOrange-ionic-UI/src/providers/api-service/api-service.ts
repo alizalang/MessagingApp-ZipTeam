@@ -16,12 +16,12 @@ export class ApiServiceProvider {
   }
 
   getUsers(){
-    return this.http.get('http:localhost:8080/users')
+    return this.http.get('https://arcane-ridge.herokuapp.com/users')
   }
 
   save(createAccountInfo: any) : Observable<Object> {
     //return this.http.post(`http://localhost:8080/ZipTeamOrange/add?username=${createAccountInfo.name}&email=${createAccountInfo.email}&password=${createAccountInfo.password}`, {})
-    return this.http.post(`http://localhost:8080/user/add`, createAccountInfo);
+    return this.http.post(`https://arcane-ridge.herokuapp.com/user/add`, createAccountInfo);
   }
 
 }

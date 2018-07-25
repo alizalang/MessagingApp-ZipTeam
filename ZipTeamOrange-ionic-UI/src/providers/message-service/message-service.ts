@@ -18,7 +18,7 @@ export class MessageServiceProvider {
   }
 
   getMessages(){
-    return this.http.get('http://localhost:8080/message/all');
+    return this.http.get('https://arcane-ridge.herokuapp.com//message/all');
   }
 
   getCurrentMessage(){
@@ -26,7 +26,7 @@ export class MessageServiceProvider {
   }
 
   saveMessage(createAccountInfo: any) : Observable<Object> {
-    return this.http.post(`http://localhost:8080/message/add`, createAccountInfo);
+    return this.http.post('https://arcane-ridge.herokuapp.com//message/add', createAccountInfo);
   }
 
 }

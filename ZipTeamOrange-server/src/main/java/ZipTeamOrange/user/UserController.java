@@ -16,7 +16,7 @@ public class UserController {
     private UserRepository userRepository;
 
     @PostMapping(path="/add")
-    @CrossOrigin(origins = {"http://localhost:8100", "http://localhost:8101", "http://localhost:8102"})
+    @CrossOrigin(origins = {"https://arcane-ridge.herokuapp.com/", "http://localhost:8100", "http://localhost:8101", "http://localhost:8102"})
     public @ResponseBody String addNewUser(@RequestBody User user) throws JsonProcessingException {
         userRepository.save(user);
         return ob.writeValueAsString(user);
